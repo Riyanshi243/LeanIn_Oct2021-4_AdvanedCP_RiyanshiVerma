@@ -121,17 +121,10 @@ void allPairs(BinaryTreeNode<int> *node, int tar)
     }
   }
 }
- 
-int numNodes(BinaryTreeNode<int>* root){
-	if(root==NULL){
-		return 0;
-	}
-	return 1+numNodes(root->left)+numNodes(root->right);
-}
 int main()
 {
-	BinaryTreeNode<int>* root=takeInputLevelWise();
-	int n;
+    BinaryTreeNode<int>* root=takeInputLevelWise();
+    int n;
     cout<<"enter the sum value: ";
     cin>>n;
     allPairs(root, n);
